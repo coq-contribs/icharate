@@ -1,0 +1,6 @@
+-I ../Kernel -I ../Lib -I ../Meta
+
+polTac.v
+struct_tacs.v
+tacticsDed.v
+tacticsSeq.v

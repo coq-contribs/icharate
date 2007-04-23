@@ -1,0 +1,21 @@
+crossDep.vo: crossDep.v ../Kernel/struct_ex.vo derivedRulesNatDed.vo
+crossDep.vi: crossDep.v ../Kernel/struct_ex.vo derivedRulesNatDed.vo
+derivedRulesNatDed.vo: derivedRulesNatDed.v ../Tacs/tacticsDed.vo ../Kernel/struct_ex.vo
+derivedRulesNatDed.vi: derivedRulesNatDed.v ../Tacs/tacticsDed.vo ../Kernel/struct_ex.vo
+medialExtraction.vo: medialExtraction.v ../Tacs/tacticsDed.vo ../Kernel/struct_ex.vo
+medialExtraction.vi: medialExtraction.v ../Tacs/tacticsDed.vo ../Kernel/struct_ex.vo
+polarity.vo: polarity.v ../Kernel/sequent.vo ../Kernel/natDed.vo ../Kernel/struct_props.vo
+polarity.vi: polarity.v ../Kernel/sequent.vo ../Kernel/natDed.vo ../Kernel/struct_props.vo
+seqNatDed.vo: seqNatDed.v ../Kernel/sequent.vo derivedRulesNatDed.vo
+seqNatDed.vi: seqNatDed.v ../Kernel/sequent.vo derivedRulesNatDed.vo
+unaries.vo: unaries.v ../Kernel/natDed.vo ../Kernel/struct_props.vo
+unaries.vi: unaries.v ../Kernel/natDed.vo ../Kernel/struct_props.vo
+unbounDep.vo: unbounDep.v derivedRulesNatDed.vo
+unbounDep.vi: unbounDep.v derivedRulesNatDed.vo
+crossDep.html: crossDep.v ../Kernel/struct_ex.html derivedRulesNatDed.html
+derivedRulesNatDed.html: derivedRulesNatDed.v ../Tacs/tacticsDed.html ../Kernel/struct_ex.html
+medialExtraction.html: medialExtraction.v ../Tacs/tacticsDed.html ../Kernel/struct_ex.html
+polarity.html: polarity.v ../Kernel/sequent.html ../Kernel/natDed.html ../Kernel/struct_props.html
+seqNatDed.html: seqNatDed.v ../Kernel/sequent.html derivedRulesNatDed.html
+unaries.html: unaries.v ../Kernel/natDed.html ../Kernel/struct_props.html
+unbounDep.html: unbounDep.v derivedRulesNatDed.html

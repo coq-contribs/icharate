@@ -1,0 +1,40 @@
+(****************************************************) 
+(*  v            |        ICHARATE TOOLKIT          *)
+(* <O______,,    +           Houda ANOUN            *)
+(*   \ICHAR/     |         Pierre CASTERAN          *)
+(*    \ATE/      +           LaBRI                  *)
+(*      //       |         2003-2006                *)
+(****************************************************)
+
+
+Description:
+The logical toolkit ICHARATE [1] is built upon a formalization of
+multimodal categorial grammars [2] in Coq proof assistant.
+This toolkit aims at facilitating the study of these
+complicated formalisms by allowing users to build interactively the
+syntactic derivations of different sentences, compute their
+semantic interpretations and also prove universal properties of entire
+classes of grammars using a collection of already established derived
+rules. Several tactics are defined to ease the interaction with users.
+
+Keywords : Multimodal Categorial Grammars, Syntax/Semantics Interface,
+Higher Order Logic, Meta-Linguistics, Coq Proof Assistant
+
+Contents:
+Lib: auxiliary files containing some properties about lists.
+
+Kernel: contains the deep embedding of the syntax and semantics of
+Multimodal Categorial Grammars in Coq. Two logical presentations are
+formalized namely sequent calculus and natural deduction.
+
+Tacs: tactics defined using Ltac language.
+
+Meta: meta properties and generic derived rules in multimodal logic.
+
+Examples: some examples which use concrete linguistic data. 
+
+
+References :
+[1] www.labri.fr/perso/anoun/Icharate.
+[2] Michael Moortgat, Categorial Type Logics, chapter 2 of Handbook of
+ Logic and Language, Elsevier/MIT Press, 1997.

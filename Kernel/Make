@@ -1,0 +1,17 @@
+-I ../Lib -I ../Tacs
+apply_rule_props.v
+basics.v
+derivSem.v
+final_sem.v
+lambda_bruijn.v
+lambda_reduction.v
+logic_const.v
+natDedGram.v
+natDed.v
+notations.v
+semLex.v
+sequent.v
+struct_props.v
+interp_coq.v
+lambda_coq.v
+struct_ex.v
