@@ -1,0 +1,48 @@
+apply_rule_props.vo: apply_rule_props.v basics.vo
+apply_rule_props.vi: apply_rule_props.v basics.vo
+basics.vo: basics.v ../Lib/listAux.vo
+basics.vi: basics.v ../Lib/listAux.vo
+derivSem.vo: derivSem.v semLex.vo
+derivSem.vi: derivSem.v semLex.vo
+final_sem.vo: final_sem.v derivSem.vo
+final_sem.vi: final_sem.v derivSem.vo
+lambda_bruijn.vo: lambda_bruijn.v ../Lib/listAux.vo basics.vo
+lambda_bruijn.vi: lambda_bruijn.v ../Lib/listAux.vo basics.vo
+lambda_reduction.vo: lambda_reduction.v lambda_bruijn.vo
+lambda_reduction.vi: lambda_reduction.v lambda_bruijn.vo
+logic_const.vo: logic_const.v lambda_bruijn.vo notations.vo
+logic_const.vi: logic_const.v lambda_bruijn.vo notations.vo
+natDedGram.vo: natDedGram.v natDed.vo
+natDedGram.vi: natDedGram.v natDed.vo
+natDed.vo: natDed.v basics.vo
+natDed.vi: natDed.v basics.vo
+notations.vo: notations.v lambda_bruijn.vo
+notations.vi: notations.v lambda_bruijn.vo
+semLex.vo: semLex.v natDedGram.vo lambda_bruijn.vo logic_const.vo
+semLex.vi: semLex.v natDedGram.vo lambda_bruijn.vo logic_const.vo
+sequent.vo: sequent.v basics.vo
+sequent.vi: sequent.v basics.vo
+struct_props.vo: struct_props.v apply_rule_props.vo
+struct_props.vi: struct_props.v apply_rule_props.vo
+interp_coq.vo: interp_coq.v lambda_coq.vo final_sem.vo
+interp_coq.vi: interp_coq.v lambda_coq.vo final_sem.vo
+lambda_coq.vo: lambda_coq.v lambda_bruijn.vo
+lambda_coq.vi: lambda_coq.v lambda_bruijn.vo
+struct_ex.vo: struct_ex.v ../Tacs/struct_tacs.vo struct_props.vo
+struct_ex.vi: struct_ex.v ../Tacs/struct_tacs.vo struct_props.vo
+apply_rule_props.html: apply_rule_props.v basics.html
+basics.html: basics.v ../Lib/listAux.html
+derivSem.html: derivSem.v semLex.html
+final_sem.html: final_sem.v derivSem.html
+lambda_bruijn.html: lambda_bruijn.v ../Lib/listAux.html basics.html
+lambda_reduction.html: lambda_reduction.v lambda_bruijn.html
+logic_const.html: logic_const.v lambda_bruijn.html notations.html
+natDedGram.html: natDedGram.v natDed.html
+natDed.html: natDed.v basics.html
+notations.html: notations.v lambda_bruijn.html
+semLex.html: semLex.v natDedGram.html lambda_bruijn.html logic_const.html
+sequent.html: sequent.v basics.html
+struct_props.html: struct_props.v apply_rule_props.html
+interp_coq.html: interp_coq.v lambda_coq.html final_sem.html
+lambda_coq.html: lambda_coq.v lambda_bruijn.html
+struct_ex.html: struct_ex.v ../Tacs/struct_tacs.html struct_props.html

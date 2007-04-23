@@ -1,0 +1,6 @@
+listAux.vo: listAux.v permutation.vo
+listAux.vi: listAux.v permutation.vo
+permutation.vo: permutation.v
+permutation.vi: permutation.v
+listAux.html: listAux.v permutation.html
+permutation.html: permutation.v
