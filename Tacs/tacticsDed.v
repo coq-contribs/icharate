@@ -204,11 +204,11 @@ Ltac backI nhyp :=
 Ltac dotI :=
    unfocus; eapply DotI.
 
-Ltac dotE n p :=
+Ltac dotE n' p' :=
   match goal with
    | |- natded (I:=?I)(J:=?J) (A:=?A)(W:=?W) _ _ _ (zfill ?z ?gamma) ?F =>
-        eapply DotE' with (n:=n)(p:=p);[try axiom |simpl]
-   | |- ?other => eapply DotE with (n:=n)(p:=p)
+        eapply DotE' with (n:=n')(p:=p');[try axiom |simpl]
+   | |- ?other => eapply DotE with (n:=n')(p:=p')
   end.
 
 Ltac dotE0 :=dotE 0 0.   
