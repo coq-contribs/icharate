@@ -387,12 +387,12 @@ match T with
 end.
 
 (* eliminates the first leaf of the form <>j A *)
-Ltac elimDiam n:=
+Ltac elimDiam n':=
 match goal with 
 | |- (natded _ _ _ ?X11 _)  =>
   match eval compute in (getFirstPathDiam X11) with
  |(None _) =>idtac
- | (Some ?p1)=> eapply DiamE with (n:=n); [pathRep p1 | constructor 1 |idtac]
+ | (Some ?p1)=> eapply DiamE with (n:=n'); [pathRep p1 | constructor 1 |idtac]
  end
 | |- _ => idtac
 end.
