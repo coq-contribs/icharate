@@ -1,8 +1,0 @@
--I ../Kernel -I ../Lib -I ../Tacs -I ../Meta
-
-ex1s.v
-ex1.v
-ex3.v
-medialEx.v
-polEx.v
-dep_ex.v

@@ -1,8 +1,0 @@
--I ../Kernel -I ../Lib -I ../Tacs
-crossDep.v
-derivedRulesNatDed.v
-medialExtraction.v
-polarity.v
-seqNatDed.v
-unaries.v
-unbounDep.v
