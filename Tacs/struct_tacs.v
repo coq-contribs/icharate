@@ -19,7 +19,7 @@ Lemma proof_irrelevanceA:forall(A:Set)(eqdecA:eqdec A)
 Qed.
 
 Lemma eqdecX_rw:forall (X:Set)(decX:eqdec X)(i:X), 
-decX i i=left (i<>i) (refl_equal i).
+decX i i=left (refl_equal i).
  intros.
  case (decX i i).
  intros.
