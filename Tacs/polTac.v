@@ -32,13 +32,13 @@ match goal with
 end.
 
 
-Ltac polH H decA p:=
+Ltac polH H decA q:=
 match goal with
 | |- False=>
 match type of H with
 |natded _ _ _ _ _ =>
-eapply polarityRefDed with (p:=p)(2:=H)(eqdecA:=decA);
- [apply linear_pol;simpl;unfold linear, leftLinear,rightLinear,allDistinctLeaves,isIncluded;simpl;and_split|simpl;omega] 
+simple eapply polarityRefDed with (p:=q)(2:=H)(eqdecA:=decA);
+ [simple apply linear_pol;simpl;unfold linear, leftLinear,rightLinear,allDistinctLeaves,isIncluded;simpl;and_split|simpl;omega] 
 |_=>idtac
 end
 |_=> idtac
