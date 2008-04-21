@@ -7,7 +7,7 @@
 
 Require Export lambda_bruijn.
 
-Notation "t1 --> t2":=(funAppli t1 t2) (at level 90,right
+Notation "t1 --> t2":=(funAppli t1 t2) (at level 55,right
 associativity):mmg_scope.
 Notation "t1 '|*|' t2":=(cartProd t1 t2) (at level 40,left
 associativity):mmg_scope.
