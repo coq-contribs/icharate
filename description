@@ -1,11 +1,11 @@
 Name: Icharate
 Title: Icharate: A logical Toolkit for Multimodal Categorial Grammars
-Authors: Houda Anoun
-        Pierre Casteran
-e-mails: anoun@labri.fr
-        casteran@labri.fr
-institution: LaBRI- Bordeaux1  
-date : 2003-2006.
+Author: Houda Anoun
+Email: anoun@labri.fr
+Author: Pierre Casteran
+Email: casteran@labri.fr
+Institution: LaBRI- Bordeaux1  
+Date : 2003-2006.
 Description:
 The logical toolkit ICHARATE  is built upon a formalization of
 multimodal categorial grammars in Coq proof assistant.
