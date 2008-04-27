@@ -37,7 +37,7 @@ match goal with
 | |- False=>
 match type of H with
 |natded _ _ _ _ _ =>
-simple eapply polarityRefDed with (p:=q)(2:=H)(eqdecA:=decA);
+apply polarityRefDed with (p:=q)(2:=H)(eqdecA:=decA);
  [simple apply linear_pol;simpl;unfold linear, leftLinear,rightLinear,allDistinctLeaves,isIncluded;simpl;and_split|simpl;omega] 
 |_=>idtac
 end
