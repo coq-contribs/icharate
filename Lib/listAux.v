@@ -439,6 +439,8 @@ Proof.
  auto.
 Qed.
 
+Require Import PermutSetoid.
+
 Section permt.
 Variable A:Set.
 Variable decA :forall (a1 a2:A),{a1=a2}+{a1<>a2}.

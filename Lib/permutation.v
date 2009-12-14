@@ -268,6 +268,9 @@ Qed.
 (**************************************************)
 (*   properties about permutation                 *)
 (**************************************************)
+
+Require Import PermutSetoid.
+
 Lemma mult_app:forall (l1 l2:list A)a, 
  multiplicity (list_contents (eq (A:=A)) decA (l1 ++l2)) a= 
 multiplicity (list_contents (eq (A:=A))decA l1) a + multiplicity (list_contents (eq (A:=A))
