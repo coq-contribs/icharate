@@ -8,7 +8,7 @@ Variable W:Set.
 Parameter semW:forall (w:W)(i:nat)(ty:semType),trans_type ty. 
 
 Definition deep_to_shallow(ct:cst W): trans_type (type_cst ct).
-intro ct; elim ct.
+elim ct.
 intro l;elim l.
 simpl.
 intros P Q;exact (P/\Q).
