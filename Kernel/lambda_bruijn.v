@@ -9,7 +9,7 @@ Require Export listAux.
 Require Export Arith.
 Require Export basics.
 Set Implicit Arguments.
-
+Global Set Asymmetric Patterns.
 
 Section allSem.
 Variables I J A:Set.
