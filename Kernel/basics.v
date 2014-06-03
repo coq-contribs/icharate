@@ -9,6 +9,7 @@
 Require Export Arith.
 Require Export listAux.
 Set Implicit Arguments.
+Unset Standard Proposition Elimination Names.
 
 Section Definitions.
  Definition eqdec (X:Set) := forall x y: X, {x=y}+{x<>y}.

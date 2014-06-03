@@ -9,6 +9,7 @@
 Require Export Eqdep_dec.
 Require Export apply_rule_props.
 Set Implicit Arguments.
+Unset Standard Proposition Elimination Names.
 
 
 Lemma proof_irrelevanceA:forall(A:Set)(eqdecA:eqdec A)
