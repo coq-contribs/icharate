@@ -7,7 +7,7 @@ Email: casteran@labri.fr
 Institution: LaBRI- Bordeaux1  
 Date : 2003-2006
 Description:
-The logical toolkit ICHARATE  is built upon a formalization of
+The logical toolkit ICHARATE is built upon a formalization of
 multimodal categorial grammars in Coq proof assistant.
 This toolkit aims at facilitating the study of these
 complicated formalisms by allowing users to build interactively the
