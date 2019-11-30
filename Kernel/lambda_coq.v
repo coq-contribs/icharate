@@ -36,7 +36,7 @@ Inductive listT (A:Type):Type:=
 |nilT:listT A
 |consT:A->listT A->listT A.
 
-Implicit Arguments nilT [A].
+Arguments nilT [A].
 
 Inductive trans_env:list semType->listT (type_obj)->
                           Type:=
@@ -48,7 +48,7 @@ Inductive trans_env:list semType->listT (type_obj)->
 Inductive optionT (A : Type) : Type:=
   SomeT : A -> optionT A | NoneT : optionT A.
 
-Implicit Arguments NoneT [A].
+Arguments NoneT [A].
 
 Fixpoint nth_error_T (A:Type)(l:listT A)(n:nat){struct l}:optionT A:=
 match l, n with

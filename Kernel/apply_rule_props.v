@@ -8,7 +8,6 @@
 
 Require Export basics.
 Set Implicit Arguments.
-Unset Standard Proposition Elimination Names.
 
 Section props.
  Variables A W I J: Set.

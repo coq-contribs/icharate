@@ -26,7 +26,7 @@ end.
 Ltac elimSig:=
 match goal with 
 H:(sig _)|- _ => elim H; clear H; intros;elimSig
-|H:(sigS _)|-_ =>elim H; clear H; intros;elimSig
+|H:(sigT _)|-_ =>elim H; clear H; intros;elimSig
 | _=>idtac
 end.
 (* to build the decidability of equality algorithm within enumerative sets *)
@@ -76,7 +76,7 @@ Ltac down_diam :=
            ?Delta ?Delta' ?Gamma ?Gamma') ] => econstructor 4
 end.
 
-Implicit Arguments zroot [I J A W].
+Arguments zroot [I J A W].
 Ltac unfocus :=
    match goal with 
     | |- (natded (I:=?I)(J:=?J) (A:=?A)(W:=?W) ?dI ?dJ ?R

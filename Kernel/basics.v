@@ -9,7 +9,6 @@
 Require Export Arith.
 Require Export listAux.
 Set Implicit Arguments.
-Unset Standard Proposition Elimination Names.
 
 Section Definitions.
  Definition eqdec (X:Set) := forall x y: X, {x=y}+{x<>y}.
@@ -1244,14 +1243,14 @@ Defined.
 
 End replace_props.
 
-Implicit Arguments hyp [W]. 
-Implicit Arguments pvar [I J].
-Implicit Arguments pcomma [I J].
-Implicit Arguments pdiam [I J].
-Implicit Arguments NL [I J ].
-Implicit Arguments res [W].
-Implicit Arguments res [I J A W].
-Implicit Arguments At [A I J].
+Arguments hyp [W]. 
+Arguments pvar [I J].
+Arguments pcomma [I J].
+Arguments pdiam [I J].
+Arguments NL [I J].
+Arguments res [I].
+Arguments res [I J A W].
+Arguments At [I J A].
 
 Hint Resolve zgraft_def no_holes zfill_fill_0 zfill_fill strip_match match_strip 
 zfill_to_replace struct_replace_as_zfill:ctl_db. 

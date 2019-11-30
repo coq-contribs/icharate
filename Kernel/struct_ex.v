@@ -526,9 +526,9 @@ Lemma MCImgInv: forall I J decI decJ A W   (t1 t2 t3 t :context  I J A W) (i j:I
 Qed.
 
 
-Implicit Arguments L1 [I J].
-Implicit Arguments L2 [I J].
-Implicit Arguments P[I J].
-Implicit Arguments MP[I J].
-Implicit Arguments MC[I J].
+Arguments L1 [I J].
+Arguments L2 [I J].
+Arguments P[I J].
+Arguments MP[I J].
+Arguments MC[I J].
 
